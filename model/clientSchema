@@ -1,0 +1,8 @@
+const mongoose = require("mongoose");
+const clientSchema = new mongoose.Schema({
+    "name" :{type:String},
+    "task" :{type:String}
+},{
+    collection:clients
+})
+module.exports = ("cleintSchema",clientSchema);
