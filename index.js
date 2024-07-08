@@ -3,7 +3,7 @@ const express = require("express");
 const app=express();
 const clientRoute = require("./controller/clientRoute")
 mongoose.set("strictQuery",true);
-mongoose.connect("mongodb+srv://12345678A:12345678A@cluster0.uh5nblj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("");
 var db = mongoose.connection;
 db.on("open",()=>console.log("Connected"))
 db.on("error",()=>console.log("Not Connected"))
