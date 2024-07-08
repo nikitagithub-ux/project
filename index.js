@@ -10,4 +10,4 @@ db.on("error",()=>console.log("Not Connected"))
 app.use("/clientRoute",clientRoute);
 app.listen(4000,()=>
     {console.log("Server is connected to port 4000")
-});
+}); 
